@@ -1,0 +1,63 @@
+<div class="total">
+    <div class="button">
+        <a class="onbutton" href="main.html"><input style="border: 0cm;background-color: whitesmoke;" 
+            type="submit" value="Home"
+                onsubmit="main.html"></a>
+    </div>
+    <div class="container">
+        <div class="top">
+            <div class="tablediv">
+                <table class="tabletop" style="column-width: 300px;">
+                    <tr>
+                        <td style="font-family: 'Times New Roman', Times, serif; font-size: smaller;"><label
+                                style="color: whitesmoke;">Location Name</label>
+                        </td>
+                        <td style="font-family: 'Times New Roman', Times, serif; font-size: smaller;"><label
+                                style="color: whitesmoke;">Enter Latitude</label>
+                        </td>
+                        <td style="font-family: 'Times New Roman', Times, serif; font-size: smaller;"><label
+                                style="color: whitesmoke;"> Enter Longitude</label>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td><input style="width: 170px; border-radius: 5px; height:40px; border: 0cm;" type="Text"
+                                placeholder="Location" #Location></td>
+                        <td><input style="width: 130px;border-radius: 5px; height:40px; border: 0cm;" type="Number"
+                                placeholder="Lat" #Latitude></td>
+                        <td><input style="width: 130px;border-radius: 5px; height:40px; border: 0cm;" type="Number"
+                                placeholder="Lon" #Longitude></td>
+                        <td style="width: 1000px;"><button style="border: 0cm;width: 130px;border-radius: 20px; height:40px; float: right; 
+                                background-color: #72A1BF;" (click)="print(Location,Latitude,Longitude,tablebottom)">Submit</button></td>                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="left">
+                <table class="tablebottom" #tablebottom>
+                    <th style="float: left; margin-top: -10%;margin-bottom: 1%; overflow:hidden">
+                    <label style="color:#074770;">All Co-ordinates:</label></th>
+
+                    <tr style = "overflow:scroll">
+                        <td style="color:#074770;width:200px; border-radius: 5px; height:40px; ">Location Name</td>
+                        <td style="color:#074770;width: 150px;">Given Latitude</td>
+                        <td style="color:#074770; width: 150px;">Given Longitude</td>
+                    </tr>
+                    <tr>
+
+                    </tr>
+                </table>
+                <a href="https://www.google.com/maps/dir/'12.97,77.97'/'17.38,78.48'/@15.1639198,
+                    75.6745476,7z/data=!3m1!4b1!4m10!4m9!1m3!2m2!1d77.97!2d12.97!1m3!2m2!1d78.48!2d17.38!3e2" target="_blank">
+                    <input style="width: 400px;border-radius: 20px;margin-left: 10%;height:40px; color: white; 
+                        background-color:#074770; border: 0cm;"type="submit" value="Show Route"></a>
+            </div>
+            <div class="right">
+                <iframe  style="width: 100%; height: 100%;"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.8715608208217!2d77.61733931483577!3d12.
+                    915975590892403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14faa71b7f75%3A0xb56d9352b5f866e9!
+                    2sABC%20For%20Technology%20Training%20(%20BTM%20Layout%20)!5e0!3m2!1sen!2sin!4v1615789573077!5m2!1sen!2sin"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div></div>
